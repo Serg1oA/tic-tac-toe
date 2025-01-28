@@ -1,0 +1,9 @@
+.board {
+    display: grid;
+    grid-template: 50px 50px 50px / 50px 50px 50px;
+  }
+  .board div {
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
