@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="styles.css">
     <title>Tic-Tac-Toe</title>
-    
 </head>
 <body>
     <h1 class="greenText">Tic-Tac-Toe</h1>
     <h1 id="gameState">Loading...</h1>
     <div class="board">
-        <div id="square1">X</div>
-        <div id="square2">X</div>
-        <div id="square3">X</div>
-        <div id="square4">X</div>
-        <div id="square5">X</div>
-        <div id="square6">O</div>
-        <div id="square7">O</div>
-        <div id="square8">O</div>
-        <div id="square9">O</div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="score-board">
+        <div class="player-score">
+            Player X: <span id="playerXScore">0</span>
+        </div>
+        <div class="player-score">
+            Player O: <span id="playerOScore">0</span>
+        </div>
     </div>
     <button id="nextRound">Next Round</button>
     <button id="newGame">New Game</button>
 
-    <script src="myscripts.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

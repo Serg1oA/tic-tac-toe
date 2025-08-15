@@ -16,6 +16,7 @@ button {
   border-radius: 8px;
   font-family: Georgia, serif;
 }
+
 button:hover {
   background-color: rgb(124, 201, 124);
 }
@@ -27,12 +28,34 @@ button:hover {
 .board {
   display: grid;
   grid-template: 100px 100px 100px / 100px 100px 100px;
+  margin-bottom: 20px; /* Added margin */
 }
 
-.board div {
+.square {
   border: 1px solid white;
   cursor: pointer;
   font-size: 7rem;
   line-height: 0.85;
   text-align: center;
 }
+
+/* Scoreboard Styles */
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin-top: 20px; /* Added margin */
+  margin-bottom: 20px; /* Ensure same margin as board */
+  padding: 15px;
+  background-color: rgb(0, 35, 0); /* set to body background */
+  border-radius: 10px;
+  border: 2px solid rgb(186, 255, 186);
+}
+
+.player-score {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #baffba;
+  text-shadow: 1px 1px 2px black;
+}
+
